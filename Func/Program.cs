@@ -13,7 +13,17 @@ namespace Func
             var end = double.Parse(Console.ReadLine());
             Console.Write("Delta = ");
             var delta = double.Parse(Console.ReadLine());
-            Console.WriteLine("x = ",Counters.Count(start, end,f,delta));
+            var z = Counters.Count(start, end, f, delta);
+
+            //int i = 0;
+            //var t = delta;
+            //for (; t != 1; i++)
+            //{
+            //    t *= 10;
+            //}
+            //Console.WriteLine("x = " + Math.Round(z, i, MidpointRounding.AwayFromZero) + '±' + delta);
+
+            Console.WriteLine("x = " + z);
         }
     }
 }
